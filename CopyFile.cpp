@@ -10,6 +10,7 @@ int main(int argc, char* argv[])
     if (argc < 3)
     {
         std::cout << "Source & destination files are required!";
+        exit(1);
     }
 
 	char* sourceFile = argv[1];
