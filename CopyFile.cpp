@@ -7,6 +7,11 @@ std::string GetLastErrorAsString();
 
 int main(int argc, char* argv[])
 {
+    if (argc < 3)
+    {
+        std::cout << "Source & destination files are required!";
+    }
+
 	char* sourceFile = argv[1];
 	char* destinationFile = argv[2];
 	if (!CopyFileA(sourceFile, destinationFile, true))
